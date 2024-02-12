@@ -23,6 +23,7 @@ function Product(props) {
     }
     useEffect(() => {
         _getProductDetails()
+        // eslint-disable-next-line
     }, []);
 
     
@@ -94,7 +95,7 @@ function Product(props) {
                     Prescription Required
                 </td>
                 <td className="PrimaryText">
-                    {product.prescriptionRequired==true ? 'Yes': 'No' }
+                    {product.prescriptionRequired===true ? 'Yes': 'No' }
                 </td>
             </tr>
 
